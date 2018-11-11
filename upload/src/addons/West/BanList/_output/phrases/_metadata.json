@@ -1,0 +1,20 @@
+{
+    "nav.w_bl_banlist.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "9886408aff5b66b08799d51de8bda674"
+    },
+    "permission.general_w_bl_can_view_banlist.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "2084e0478966220f33291b781031af4c"
+    },
+    "w_bl_banlist.txt": {
+        "global_cache": false,
+        "version_id": 1000010,
+        "version_string": "1.0.0 Alpha",
+        "hash": "4f32a08ea095822193f221c24f695ebc"
+    }
+}

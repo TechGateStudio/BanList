@@ -1,0 +1,17 @@
+{
+    "legacy_addon_id": "",
+    "title": "[TG] Simple BanList",
+    "description": "This addon adds a page where you can see the list of banned members",
+    "version_id": 1000010,
+    "version_string": "1.0.0 Alpha",
+    "dev": "West",
+    "dev_url": "https://xenforo.info/members/22547/",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": {
+        "XFI": "https://xenforo.info/members/22547/",
+        "GitHub": "Later"
+    },
+    "require": [],
+    "icon": ""
+}

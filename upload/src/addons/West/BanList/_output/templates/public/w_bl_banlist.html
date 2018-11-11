@@ -1,0 +1,30 @@
+<xf:title>{{ phrase('w_bl_banlist') }}</xf:title>
+<div class="block">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:datalist>
+				<xf:datarow rowtype="header">
+					<xf:cell>{{ phrase('member') }}</xf:cell>
+					<xf:cell>{{ phrase('reason_for_banning')}}</xf:cell>
+					<xf:cell>{{ phrase('ban_started') }}</xf:cell>
+					<xf:cell>{{ phrase('ban_ends') }}</xf:cell>
+					<xf:cell>{{ phrase('banned_by') }}</xf:cell>
+				</xf:datarow>
+				<xf:foreach loop="$bannedUsers" value="$bannedUser">
+					<xf:datarow>
+						<xf:cell><xf:username user="$bannedUser.User"/></xf:cell>
+						<xf:cell>{{ $bannedUser.user_reason ? $bannedUser.user_reason : phrase('n_a') }}</xf:cell>
+						<xf:cell><xf:date time="$bannedUser.ban_date"/></xf:cell>
+						<xf:cell>{{ $bannedUser.end_date ? date($bannedUser.end_date) : phrase('never') }}</xf:cell>
+						<xf:cell><xf:username user="$bannedUser.BanUser "/></xf:cell>
+					</xf:datarow>					
+				</xf:foreach>
+			</xf:datalist>
+		</div>
+		<div class="block-footer">
+			<span class="block-footer-counter">{{ display_totals($bannedUsers, $total) }}</span>
+		</div>
+	</div>
+	<xf:pagenav link="/members/banlist" page="{$page}" perpage="{$perPage}" total="{$total}"
+		wrapperclass="block-outer block-outer--after" />
+</div>

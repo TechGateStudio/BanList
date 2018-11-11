@@ -1,0 +1,11 @@
+{
+    "route_type": "public",
+    "route_prefix": "members",
+    "sub_name": "banlist",
+    "format": "banlist/",
+    "build_class": "",
+    "build_method": "",
+    "controller": "XF:Member",
+    "context": "members",
+    "action_prefix": "banlist"
+}
